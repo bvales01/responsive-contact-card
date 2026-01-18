@@ -1,0 +1,90 @@
+body {
+    background-color: #3b7283;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(131, 146, 163);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.image-container img {
+    width: 100%; 
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.info-container {
+    padding: 20px;
+}
+
+.company, .title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    text-align: center;
+
+}
+
+
+@media (min-width: 600px) {
+    .contact-card {
+        flex-direction: row;
+        max-width: 600px;   
+        align-items: center;
+    }
+
+
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        flex: 1.5;
+        padding-left: 40px;
+    }
+
+    .contact-top, .contact-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contact-card {
+        flex-direction: row;
+        max-width: 1200px;
+        margin: 100px auto;
+        padding: 40px;
+        align-items: stretch;
+    }
+
+    .image-container {
+        flex: 1;
+        margin-right: 40px;
+    }
+
+    .info-container {
+        display: flex;
+        flex: 2;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 2.5rem;
+    }
+
+    .contact-top, .contact-bottom {
+        margin-bottom: 0;
+        text-align: center
+    }   
+}
